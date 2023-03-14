@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Table</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- CONTENT PART -->
+    <div class="content">
+      <form>
+        <label>Product id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          class="content__input pid"
+          id="pid"
+          pattern="[0-9]+"
+        /><label id="pid_msg" class="content__msg"></label> <br /><br />
+        <label>Product Name&nbsp;</label>
+        <input type="text" class="content__input pname" id="pname" />
+        <label id="pname_msg" class="content__msg"></label> <br /><br />
+        <label>Product Price&nbsp;&nbsp;</label>
+        <input
+          type="number"
+          name=""
+          class="content__input pprice"
+          id="pprice"
+        /><label id="pprice_msg" class="content__msg"></label> <br /><br />
+      </form>
+    </div>
+    <!-- Add Button -->
+    <div class="submit" onclick="fun()">ADD PRODUCT</div>
+    <!-- Products detail -->
+    <table id="table">
+      <thead class="table__head">
+        <tr>
+          <th>Product Id</th>
+          <th>Product name</th>
+          <th>Product Price</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </body>
+  <script src="JS/script.js"></script>
+</html>
