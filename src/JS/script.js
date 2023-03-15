@@ -19,7 +19,7 @@ function fun() {
         document.getElementById("pname_msg").innerHTML = " ";
     }
     //validation on product price
-    if (pprice == "" || pprice == 0) {
+    if (pprice == "" || pprice <= 0) {
         document.getElementById("pprice_msg").innerHTML = "Please Fill the Correct value of Product Price";
         return;
     } else {
